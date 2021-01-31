@@ -1,0 +1,8 @@
+<h1>ご購入商品情報を入力</h1>
+<%= form_with model: @item, local: true do |form| %>
+<p><%= form.label :name, "商品名" %><%= form.text_field :name %></p>
+<p><%= form.label :price, "値段" %><%= form.text_field :price %></p>
+<%= form.submit "送信" %>
+<% end %>
+
+
